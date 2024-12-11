@@ -11,6 +11,7 @@ containerdConfigPatches:
         insecure_skip_verify = true
 nodes:
 - role: control-plane
+- role: worker
   extraPortMappings:
   - containerPort: 32080
     hostPort: 80
